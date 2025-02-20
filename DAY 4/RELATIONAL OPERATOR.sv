@@ -34,3 +34,30 @@ $display("a=2 b=3 : b - (1 < a) = %0d", b - (1 < a));
 $display("a=2 b=3 : b - 1 < a = %0d", b - 1 < a);
 end
 endmodule
+
+ANSWER:
+
+# KERNEL: 3 > 2 = boolean 1
+# KERNEL: 3 < 2 = boolean 0
+# KERNEL: 3 >= 2 = boolean 1
+# KERNEL: 3 <= 2 = boolean 0
+# KERNEL: 
+# KERNEL: Relational operation with 'x' results in 'x'
+# KERNEL: 
+# KERNEL:  'x > 2 = boolean x
+# KERNEL:  'x < 2 = boolean x
+# KERNEL:  'x >= 2 = boolean x
+# KERNEL:  'x <= 2 = boolean x
+# KERNEL: 
+# KERNEL: 
+# KERNEL: '-1 > -2 = boolean 1
+# KERNEL: 
+# KERNEL: 
+# KERNEL: Following two are the same
+# KERNEL: a=2 b=3 : a < b - 1 = 0
+# KERNEL: a=2 b=3 : a < (b - 1) = 0
+# KERNEL: 
+# KERNEL: 
+# KERNEL: Following two are NOT the same
+# KERNEL: a=2 b=3 : b - (1 < a) = 2
+# KERNEL: a=2 b=3 : b - 1 < a = 0
